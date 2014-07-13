@@ -14,7 +14,7 @@ import org.slf4j.LoggerFactory;
 public class CloseQuietly {
     private static final Logger log = LoggerFactory.getLogger(CloseQuietly.class);
 
-    static void closeQuietly(Closeable closeable) {
+    public static void closeQuietly(Closeable closeable) {
         if (closeable != null) {
             try {
                 closeable.close();
